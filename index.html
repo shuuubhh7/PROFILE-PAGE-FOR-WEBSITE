@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShipCheck | Profile</title>
+
+    <!-- Poppins Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Boxicons -->
+    <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ========================================
+         HEADER
+    ======================================== -->
+
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="#" class="site-logo">
+                <i class="bx bx-shield-quarter"></i>
+                ShipCheck
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ========================================
+         MAIN PROFILE
+    ======================================== -->
+
+    <main class="profile-container">
+
+
+        <!-- ========================================
+             1. PROFILE HEADER
+        ======================================== -->
+
+        <section class="profile-header">
+
+
+            <!-- Profile Photo -->
+
+            <div class="profile-photo">
+
+                <img
+                    src="profile.jpg"
+                    alt="Profile Picture"
+                >
+
+            </div>
+
+
+
+            <!-- Profile Information -->
+
+            <div class="profile-info">
+
+
+                <!-- Name -->
+
+                <label for="name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your name"
+                >
+
+
+
+                <!-- Username -->
+
+                <label for="username">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="@username"
+                >
+
+
+
+                <!-- Email -->
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="you@example.com"
+                >
+
+
+
+                <!-- GitHub -->
+
+                <label for="github">
+                    GitHub
+                </label>
+
+                <input
+                    type="url"
+                    id="github"
+                    placeholder="https://github.com/username"
+                >
+
+
+
+                <!-- Edit Profile -->
+
+                <button type="button">
+                    <i class="bx bx-edit-alt"></i>
+                    Edit Profile
+                </button>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             2. SECURITY OVERVIEW
+        ======================================== -->
+
+        <section class="security-overview">
+
+
+            <!-- Section Header -->
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Security Overview
+                    </h2>
+
+                    <p>
+                        Monitor your repository security performance.
+                    </p>
+
+                </div>
+
+
+                <a href="#" class="view-details">
+                    View Details
+                </a>
+
+            </div>
+
+
+
+            <!-- Security Stats -->
+
+            <div class="security-stats">
+
+
+                <!-- Total Scans -->
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="bx bx-scan"></i>
+
+                    </div>
+
+
+                    <div class="stat-info">
+
+                        <h3>
+                            Total Scans
+                        </h3>
+
+                        <p
+                            class="stat-value"
+                            id="totalScans"
+                        >
+                            0
+                        </p>
+
+                        <span class="stat-description">
+                            Repositories scanned
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Average Security Score -->
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="bx bx-shield-quarter"></i>
+
+                    </div>
+
+
+                    <div class="stat-info">
+
+                        <h3>
+                            Average Score
+                        </h3>
+
+                        <p class="stat-value">
+
+                            <span id="averageScore">
+                                0
+                            </span>
+
+                            /100
+
+                        </p>
+
+                        <span class="stat-description">
+                            Security performance
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Vulnerabilities Found -->
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="bx bx-error"></i>
+
+                    </div>
+
+
+                    <div class="stat-info">
+
+                        <h3>
+                            Vulnerabilities Found
+                        </h3>
+
+                        <p
+                            class="stat-value"
+                            id="vulnerabilitiesFound"
+                        >
+                            0
+                        </p>
+
+                        <span class="stat-description">
+                            Issues detected
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Vulnerabilities Fixed -->
+
+                <article class="stat-card">
+
+                    <div class="stat-icon">
+
+                        <i class="bx bx-check-shield"></i>
+
+                    </div>
+
+
+                    <div class="stat-info">
+
+                        <h3>
+                            Vulnerabilities Fixed
+                        </h3>
+
+                        <p
+                            class="stat-value"
+                            id="vulnerabilitiesFixed"
+                        >
+                            0
+                        </p>
+
+                        <span class="stat-description">
+                            Issues resolved
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             3. SCAN HISTORY
+        ======================================== -->
+
+        <section class="scan-history">
+
+
+            <!-- Section Header -->
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Scan History
+                    </h2>
+
+                    <p>
+                        View your recent repository security scans.
+                    </p>
+
+                </div>
+
+
+                <a href="#" class="view-all">
+                    View All Scans
+                </a>
+
+            </div>
+
+
+
+            <!-- Scan Table -->
+
+            <div class="scan-table-container">
+
+                <table class="scan-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Repository
+                            </th>
+
+                            <th>
+                                Security Score
+                            </th>
+
+                            <th>
+                                Grade
+                            </th>
+
+                            <th>
+                                Vulnerabilities
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                            <th>
+                                Date
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="scanHistory">
+
+
+                        <!-- Scan 1 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="repository-info">
+
+                                    <i class="bx bxl-github"></i>
+
+                                    <span>
+                                        checkout-service
+                                    </span>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span
+                                    class="scan-score"
+                                    data-score="91"
+                                >
+                                    91/100
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="scan-grade">
+                                    A
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="vulnerability-count">
+                                    2
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="scan-status safe">
+                                    Secure
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <time datetime="">
+                                    Today
+                                </time>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- Scan 2 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="repository-info">
+
+                                    <i class="bx bxl-github"></i>
+
+                                    <span>
+                                        ecommerce-api
+                                    </span>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span
+                                    class="scan-score"
+                                    data-score="78"
+                                >
+                                    78/100
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="scan-grade">
+                                    B
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="vulnerability-count">
+                                    7
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="scan-status warning">
+                                    At Risk
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <time datetime="">
+                                    Yesterday
+                                </time>
+
+                            </td>
+
+                        </tr>
+
+
+
+                        <!-- Scan 3 -->
+
+                        <tr>
+
+                            <td>
+
+                                <div class="repository-info">
+
+                                    <i class="bx bxl-github"></i>
+
+                                    <span>
+                                        portfolio
+                                    </span>
+
+                                </div>
+
+                            </td>
+
+
+                            <td>
+
+                                <span
+                                    class="scan-score"
+                                    data-score="62"
+                                >
+                                    62/100
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="scan-grade">
+                                    D
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="vulnerability-count">
+                                    15
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <span class="scan-status danger">
+                                    Critical
+                                </span>
+
+                            </td>
+
+
+                            <td>
+
+                                <time datetime="">
+                                    3 days ago
+                                </time>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             4. SAVED REPOSITORIES
+        ======================================== -->
+
+        <section class="saved-repositories">
+
+
+            <!-- Section Header -->
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Saved Repositories
+                    </h2>
+
+                    <p>
+                        Manage and quickly scan your connected repositories.
+                    </p>
+
+                </div>
+
+
+                <a href="#" class="view-all">
+                    View All
+                </a>
+
+            </div>
+
+
+
+            <!-- Repository List -->
+
+            <div
+                class="repository-list"
+                id="repositoryList"
+            >
+
+
+                <!-- Repository 1 -->
+
+                <article class="repository-card">
+
+
+                    <!-- Repository Information -->
+
+                    <div class="repository-info">
+
+                        <div class="repository-icon">
+
+                            <i class="bx bxl-github"></i>
+
+                        </div>
+
+
+                        <div class="repository-details">
+
+                            <h3>
+                                checkout-service
+                            </h3>
+
+
+                            <p class="repository-owner">
+
+                                <i class="bx bx-user"></i>
+
+                                shubh-dev
+
+                            </p>
+
+
+                            <span class="repository-branch">
+
+                                <i class="bx bx-git-branch"></i>
+
+                                main
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Security -->
+
+                    <div class="repository-security">
+
+                        <div class="security-score">
+
+                            <span class="label">
+                                Security Score
+                            </span>
+
+                            <strong>
+                                91<span>/100</span>
+                            </strong>
+
+                        </div>
+
+
+                        <span class="repository-status safe">
+                            Secure
+                        </span>
+
+                    </div>
+
+
+
+                    <!-- Actions -->
+
+                    <div class="repository-actions">
+
+                        <button
+                            type="button"
+                            class="scan-btn"
+                        >
+
+                            <i class="bx bx-scan"></i>
+
+                            Scan Again
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="remove-btn"
+                            aria-label="Remove repository"
+                        >
+
+                            <i class="bx bx-trash"></i>
+
+                        </button>
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- Repository 2 -->
+
+                <article class="repository-card">
+
+
+                    <div class="repository-info">
+
+                        <div class="repository-icon">
+
+                            <i class="bx bxl-github"></i>
+
+                        </div>
+
+
+                        <div class="repository-details">
+
+                            <h3>
+                                payment-api
+                            </h3>
+
+
+                            <p class="repository-owner">
+
+                                <i class="bx bx-user"></i>
+
+                                shubh-dev
+
+                            </p>
+
+
+                            <span class="repository-branch">
+
+                                <i class="bx bx-git-branch"></i>
+
+                                main
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="repository-security">
+
+                        <div class="security-score">
+
+                            <span class="label">
+                                Security Score
+                            </span>
+
+                            <strong>
+                                78<span>/100</span>
+                            </strong>
+
+                        </div>
+
+
+                        <span class="repository-status warning">
+                            At Risk
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="repository-actions">
+
+                        <button
+                            type="button"
+                            class="scan-btn"
+                        >
+
+                            <i class="bx bx-scan"></i>
+
+                            Scan Again
+
+                        </button>
+
+
+                        <button
+                            type="button"
+                            class="remove-btn"
+                            aria-label="Remove repository"
+                        >
+
+                            <i class="bx bx-trash"></i>
+
+                        </button>
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             5. SECURITY SCORE TREND
+        ======================================== -->
+
+        <section class="security-score-trend">
+
+
+            <!-- Section Header -->
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Security Score Trend
+                    </h2>
+
+                    <p>
+                        Track how your security performance has changed over time.
+                    </p>
+
+                </div>
+
+
+                <div class="trend-filter">
+
+                    <button
+                        type="button"
+                        class="filter-btn active"
+                    >
+                        7 Days
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                    >
+                        30 Days
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-btn"
+                    >
+                        90 Days
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Current Score -->
+
+            <div class="trend-summary">
+
+
+                <div class="current-score">
+
+                    <span class="label">
+                        Current Security Score
+                    </span>
+
+
+                    <strong id="currentSecurityScore">
+
+                        91<span>/100</span>
+
+                    </strong>
+
+
+                    <span
+                        class="score-change positive"
+                        id="scoreChange"
+                    >
+
+                        <i class="bx bx-up-arrow-alt"></i>
+
+                        +8% from last month
+
+                    </span>
+
+                </div>
+
+
+
+                <div class="trend-status">
+
+                    <span class="status-label">
+                        Security Status
+                    </span>
+
+
+                    <span class="status-badge secure">
+
+                        <i class="bx bx-shield-check"></i>
+
+                        Excellent
+
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Score Chart -->
+
+            <div class="score-chart">
+
+
+                <div class="chart-header">
+
+                    <h3>
+                        Score History
+                    </h3>
+
+                    <span class="chart-range">
+                        Last 30 Days
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="chart-container"
+                    id="securityScoreChart"
+                >
+
+                    <canvas id="scoreChart"></canvas>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ========================================
+             6. VULNERABILITY BREAKDOWN
+        ======================================== -->
+
+        <section class="vulnerability-breakdown">
+
+
+            <!-- Section Header -->
+
+            <div class="section-header">
+
+                <div>
+
+                    <h2>
+                        Vulnerability Breakdown
+                    </h2>
+
+                    <p>
+                        Overview of security issues detected across your repositories.
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="#"
+                    class="view-details"
+                >
+                    View Full Report
+                </a>
+
+            </div>
+
+
+
+            <!-- Vulnerability Summary -->
+
+            <div class="vulnerability-summary">
+
+
+                <div class="total-vulnerabilities">
+
+                    <span class="label">
+                        Total Vulnerabilities
+                    </span>
+
+                    <strong id="totalVulnerabilities">
+                        42
+                    </strong>
+
+                    <span class="summary-description">
+                        Detected across all repositories
+                    </span>
+
+                </div>
+
+
+
+                <div class="resolved-vulnerabilities">
+
+                    <span class="label">
+                        Resolved
+                    </span>
+
+                    <strong id="resolvedVulnerabilities">
+                        35
+                    </strong>
+
+                    <span class="summary-description">
+                        Issues successfully fixed
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Vulnerability Cards -->
+
+            <div class="vulnerability-list">
+
+
+                <!-- Critical -->
+
+                <article class="vulnerability-card critical">
+
+                    <div class="vulnerability-icon">
+
+                        <i class="bx bx-error-circle"></i>
+
+                    </div>
+
+
+                    <div class="vulnerability-info">
+
+                        <h3>
+                            Critical
+                        </h3>
+
+                        <p>
+                            Severe security vulnerabilities requiring immediate attention.
+                        </p>
+
+                    </div>
+
+
+                    <div class="vulnerability-count">
+
+                        <strong id="criticalCount">
+                            5
+                        </strong>
+
+                        <span>
+                            Issues
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- High -->
+
+                <article class="vulnerability-card high">
+
+                    <div class="vulnerability-icon">
+
+                        <i class="bx bx-error"></i>
+
+                    </div>
+
+
+                    <div class="vulnerability-info">
+
+                        <h3>
+                            High
+                        </h3>
+
+                        <p>
+                            High-risk vulnerabilities that should be addressed soon.
+                        </p>
+
+                    </div>
+
+
+                    <div class="vulnerability-count">
+
+                        <strong id="highCount">
+                            8
+                        </strong>
+
+                        <span>
+                            Issues
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Medium -->
+
+                <article class="vulnerability-card medium">
+
+                    <div class="vulnerability-icon">
+
+                        <i class="bx bx-info-circle"></i>
+
+                    </div>
+
+
+                    <div class="vulnerability-info">
+
+                        <h3>
+                            Medium
+                        </h3>
+
+                        <p>
+                            Security issues that should be reviewed and monitored.
+                        </p>
+
+                    </div>
+
+
+                    <div class="vulnerability-count">
+
+                        <strong id="mediumCount">
+                            12
+                        </strong>
+
+                        <span>
+                            Issues
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- Low -->
+
+                <article class="vulnerability-card low">
+
+                    <div class="vulnerability-icon">
+
+                        <i class="bx bx-check-circle"></i>
+
+                    </div>
+
+
+                    <div class="vulnerability-info">
+
+                        <h3>
+                            Low
+                        </h3>
+
+                        <p>
+                            Minor security issues with limited potential impact.
+                        </p>
+
+                    </div>
+
+
+                    <div class="vulnerability-count">
+
+                        <strong id="lowCount">
+                            17
+                        </strong>
+
+                        <span>
+                            Issues
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+
+            <!-- ========================================
+                 RESOLUTION PROGRESS
+            ======================================== -->
+
+            <div class="vulnerability-progress">
+
+
+                <div class="progress-header">
+
+                    <h3>
+                        Resolution Progress
+                    </h3>
+
+                    <span id="resolutionPercentage">
+                        83%
+                    </span>
+
+                </div>
+
+
+                <div class="progress-bar">
+
+                    <div
+                        class="progress-fill"
+                        id="resolutionProgress"
+                        style="width: 83%;"
+                    ></div>
+
+                </div>
+
+
+                <p>
+                    35 of 42 vulnerabilities have been resolved.
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+
+            <!-- Brand -->
+
+            <div class="footer-brand">
+
+                <h2 class="footer-logo">
+                    ShipCheck
+                </h2>
+
+                <p>
+                    Monitor, analyze, and improve the security
+                    of your repositories.
+                </p>
+
+
+                <div class="footer-socials">
+
+                    <a
+                        href="#"
+                        aria-label="GitHub"
+                    >
+                        <i class="bx bxl-github"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Twitter"
+                    >
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Product -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Product
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Security Scan
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Reports
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Repositories
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- Resources -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Resources
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            Documentation
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Security Guide
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Support
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+
+            <!-- Company -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Company
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="#">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Privacy
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- Footer Bottom -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 ShipCheck. All rights reserved.
+            </p>
+
+
+            <div class="footer-security">
+
+                <span>
+
+                    <i class="bx bx-lock-alt"></i>
+
+                    Secure Platform
+
+                </span>
+
+
+                <span>
+
+                    <i class="bx bx-shield-check"></i>
+
+                    Security First
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
